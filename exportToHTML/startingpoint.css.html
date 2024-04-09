@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>startingpoint.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #d5b778;}
+.s2 { color: #bcbec4;}
+.s3 { color: #bababa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #2aacb8;}
+.s6 { color: #6aab73;}
+.s7 { color: #7a7e85;}
+.s8 { color: #cf8e6d;}
+.s9 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+startingpoint.css</font>
+</center></td></tr></table>
+<pre><span class="s0">.</span><span class="s1">cs-topper </span><span class="s0">{</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--topperFontSize</span><span class="s0">);</span>
+  <span class="s3">line-height</span><span class="s4">: </span><span class="s5">1.2</span><span class="s6">em</span><span class="s0">;</span>
+  <span class="s3">text-transform</span><span class="s4">: </span><span class="s6">uppercase</span><span class="s0">;</span>
+  <span class="s3">text-align</span><span class="s4">: </span><span class="s6">center</span><span class="s0">;</span>
+  <span class="s3">letter-spacing</span><span class="s4">: </span><span class="s5">.1</span><span class="s6">em</span><span class="s0">;</span>
+  <span class="s3">font-weight</span><span class="s4">: </span><span class="s5">500</span><span class="s0">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--primary</span><span class="s0">);</span>
+  <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s5">0.25</span><span class="s6">rem</span><span class="s0">;</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s6">block</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.</span><span class="s1">cs-title </span><span class="s0">{</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--headerFontSize</span><span class="s0">);</span>
+  <span class="s3">font-weight</span><span class="s4">: </span><span class="s5">700</span><span class="s0">;</span>
+  <span class="s3">line-height</span><span class="s4">: </span><span class="s5">1.2</span><span class="s6">em</span><span class="s0">;</span>
+  <span class="s3">text-align</span><span class="s4">: </span><span class="s6">center</span><span class="s0">;</span>
+  <span class="s3">max-width</span><span class="s4">: </span><span class="s5">53.75</span><span class="s6">rem</span><span class="s0">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s5">0 0 1</span><span class="s6">rem </span><span class="s5">0</span><span class="s0">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--headerColor</span><span class="s0">);</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s6">relative</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+
+<span class="s7">/* Mobile - 360px */</span>
+<span class="s8">@media </span><span class="s6">only screen </span><span class="s1">and </span><span class="s0">(</span><span class="s3">min-width</span><span class="s4">: </span><span class="s5">0</span><span class="s6">rem</span><span class="s0">) {</span>
+  <span class="s1">#services-1269 </span><span class="s0">{</span>
+    <span class="s3">padding</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--sectionPadding</span><span class="s0">);</span>
+    <span class="s3">overflow</span><span class="s4">: </span><span class="s6">hidden</span><span class="s0">;</span>
+    <span class="s3">position</span><span class="s4">: </span><span class="s6">relative</span><span class="s0">;</span>
+    <span class="s3">z-index</span><span class="s4">: </span><span class="s0">-</span><span class="s5">1</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-container </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+    <span class="s7">/* changes to 1280px at tablet */</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s5">34.375</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s6">auto</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s6">flex</span><span class="s0">;</span>
+    <span class="s3">flex-direction</span><span class="s4">: </span><span class="s6">row</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s4">: </span><span class="s6">flex-start</span><span class="s0">;</span>
+    <span class="s7">/* 48px - 64px */</span>
+    <span class="s3">gap</span><span class="s4">: </span><span class="s1">clamp</span><span class="s0">(</span><span class="s5">3</span><span class="s6">rem</span><span class="s0">, </span><span class="s5">6</span><span class="s6">vw</span><span class="s0">, </span><span class="s5">4</span><span class="s6">rem</span><span class="s0">);</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-content </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s5">32.625</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s5">400</span><span class="s0">;</span>
+    <span class="s3">font-style</span><span class="s4">: </span><span class="s6">normal</span><span class="s0">;</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s6">flex</span><span class="s0">;</span>
+    <span class="s3">flex-direction</span><span class="s4">: </span><span class="s6">column</span><span class="s0">;</span>
+    <span class="s7">/* centers content horizontally, set to flex-start to left align */</span>
+    <span class="s3">align-items</span><span class="s4">: </span><span class="s6">flex-start</span><span class="s0">;</span>
+    <span class="s7">/* set text align to center if content needs to be centrally aligned */</span>
+    <span class="s3">text-align</span><span class="s4">: </span><span class="s6">left</span><span class="s0">;</span>
+  <span class="s0">}</span>
+
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-button-solid </span><span class="s0">{</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s5">1</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s7">/* 46px - 56px */</span>
+    <span class="s3">line-height</span><span class="s4">: </span><span class="s1">clamp</span><span class="s0">(</span><span class="s5">2.875</span><span class="s6">rem</span><span class="s0">, </span><span class="s5">5.5</span><span class="s6">vw</span><span class="s0">, </span><span class="s5">3.5</span><span class="s6">rem</span><span class="s0">);</span>
+    <span class="s3">text-decoration</span><span class="s4">: </span><span class="s6">none</span><span class="s0">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s5">500</span><span class="s0">;</span>
+    <span class="s3">font-style</span><span class="s4">: </span><span class="s6">normal</span><span class="s0">;</span>
+    <span class="s3">text-align</span><span class="s4">: </span><span class="s6">center</span><span class="s0">;</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s9">#fff</span><span class="s0">;</span>
+    <span class="s3">min-width</span><span class="s4">: </span><span class="s5">9.375</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">padding</span><span class="s4">: </span><span class="s5">0 1.5</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">background-color</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--primary</span><span class="s0">);</span>
+    <span class="s3">border-radius</span><span class="s4">: </span><span class="s5">0.25</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s6">inline-block</span><span class="s0">;</span>
+    <span class="s3">position</span><span class="s4">: </span><span class="s6">relative</span><span class="s0">;</span>
+    <span class="s3">z-index</span><span class="s4">: </span><span class="s5">1</span><span class="s0">;</span>
+    <span class="s7">/* prevents padding from adding to the width */</span>
+    <span class="s3">box-sizing</span><span class="s4">: </span><span class="s6">border-box</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-button-solid</span><span class="s4">:</span><span class="s1">before </span><span class="s0">{</span>
+    <span class="s3">content</span><span class="s4">: </span><span class="s6">&quot;&quot;</span><span class="s0">;</span>
+    <span class="s3">position</span><span class="s4">: </span><span class="s6">absolute</span><span class="s0">;</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">0</span><span class="s0">%;</span>
+    <span class="s3">background</span><span class="s4">: </span><span class="s9">#000</span><span class="s0">;</span>
+    <span class="s3">opacity</span><span class="s4">: </span><span class="s5">1</span><span class="s0">;</span>
+    <span class="s3">top</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">left</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">z-index</span><span class="s4">: </span><span class="s0">-</span><span class="s5">1</span><span class="s0">;</span>
+    <span class="s3">border-radius</span><span class="s4">: </span><span class="s5">0.25</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">transition</span><span class="s4">: </span><span class="s6">width </span><span class="s5">0.3</span><span class="s6">s</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-button-solid</span><span class="s4">:</span><span class="s1">hover</span><span class="s4">:</span><span class="s1">before </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-card-group </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s5">0 </span><span class="s6">auto</span><span class="s0">;</span>
+    <span class="s3">padding</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s6">flex</span><span class="s0">;</span>
+    <span class="s3">grid-template-columns</span><span class="s4">: </span><span class="s1">repeat</span><span class="s0">(</span><span class="s5">4</span><span class="s0">, </span><span class="s5">1</span><span class="s6">fr</span><span class="s0">);</span>
+    <span class="s7">/* 16px - 20px */</span>
+    <span class="s3">gap</span><span class="s4">: </span><span class="s1">clamp</span><span class="s0">(</span><span class="s5">1</span><span class="s6">rem</span><span class="s0">, </span><span class="s5">2.75</span><span class="s6">vw</span><span class="s0">, </span><span class="s5">1.25</span><span class="s6">rem</span><span class="s0">);</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-item </span><span class="s0">{</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s5">500</span><span class="s0">;</span>
+    <span class="s3">border-radius</span><span class="s4">: </span><span class="s5">1</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">margin-left</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">background-color</span><span class="s4">: </span><span class="s9">#fff</span><span class="s0">;</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+    <span class="s3">box-sizing</span><span class="s4">: </span><span class="s6">border-box</span><span class="s0">;</span>
+    <span class="s3">grid-column</span><span class="s4">: </span><span class="s6">span </span><span class="s5">12</span><span class="s0">;</span>
+    <span class="s7">/* 20px - 24px */</span>
+    <span class="s3">padding</span><span class="s4">: </span><span class="s1">clamp</span><span class="s0">(</span><span class="s5">1.25</span><span class="s6">rem</span><span class="s0">, </span><span class="s5">2.4</span><span class="s6">vw</span><span class="s0">, </span><span class="s5">1.5</span><span class="s6">rem</span><span class="s0">);</span>
+    <span class="s3">list-style</span><span class="s4">: </span><span class="s6">none</span><span class="s0">;</span>
+    <span class="s3">box-shadow</span><span class="s4">: </span><span class="s5">0</span><span class="s6">px </span><span class="s5">0</span><span class="s6">px </span><span class="s5">24</span><span class="s6">px </span><span class="s5">0</span><span class="s6">px </span><span class="s1">rgba</span><span class="s0">(</span><span class="s5">0</span><span class="s0">, </span><span class="s5">0</span><span class="s0">, </span><span class="s5">0</span><span class="s0">, </span><span class="s5">0.1</span><span class="s0">);</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-h3 </span><span class="s0">{</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s5">1.25</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">line-height</span><span class="s4">: </span><span class="s5">1.2</span><span class="s6">em</span><span class="s0">;</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s5">0 0 1.25</span><span class="s6">rem </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--headerColor</span><span class="s0">);</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s6">flex</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s4">: </span><span class="s6">center</span><span class="s0">;</span>
+    <span class="s3">gap</span><span class="s4">: </span><span class="s5">1</span><span class="s6">rem</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-picture </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">2.25</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">2.25</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">border-radius</span><span class="s4">: </span><span class="s5">50</span><span class="s0">%;</span>
+    <span class="s3">background-color</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--primaryLight</span><span class="s0">);</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s6">flex</span><span class="s0">;</span>
+    <span class="s3">justify-content</span><span class="s4">: </span><span class="s6">center</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s4">: </span><span class="s6">center</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-icon </span><span class="s0">{</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">0.75</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s6">auto</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-number </span><span class="s0">{</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s6">block</span><span class="s0">;</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s5">0 0 0.75</span><span class="s6">rem </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s5">1.5625</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s5">500</span><span class="s0">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--primary</span><span class="s0">);</span>
+  <span class="s0">}</span>
+
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-item-text </span><span class="s0">{</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">word-wrap</span><span class="s4">: </span><span class="s6">break-word</span><span class="s0">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s5">500</span><span class="s0">;</span>
+    <span class="s3">font-style</span><span class="s4">: </span><span class="s6">normal</span><span class="s0">;</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s5">1.5</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s3">line-height</span><span class="s4">: </span><span class="s5">1.5</span><span class="s6">em</span><span class="s0">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s1">var</span><span class="s0">(</span><span class="s1">--bodyTextColor</span><span class="s0">);</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-background </span><span class="s0">{</span>
+    <span class="s3">z-index</span><span class="s4">: </span><span class="s0">-</span><span class="s5">1</span><span class="s0">;</span>
+    <span class="s3">position</span><span class="s4">: </span><span class="s6">absolute</span><span class="s0">;</span>
+    <span class="s3">bottom</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">right</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">60</span><span class="s0">%;</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-background img </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">100</span><span class="s0">%;</span>
+    <span class="s3">object-fit</span><span class="s4">: </span><span class="s6">cover</span><span class="s0">;</span>
+    <span class="s3">position</span><span class="s4">: </span><span class="s6">absolute</span><span class="s0">;</span>
+    <span class="s3">top</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+    <span class="s3">left</span><span class="s4">: </span><span class="s5">0</span><span class="s0">;</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+<span class="s7">/* Tablet - 768px */</span>
+<span class="s8">@media </span><span class="s6">only screen </span><span class="s1">and </span><span class="s0">(</span><span class="s3">min-width</span><span class="s4">: </span><span class="s5">48</span><span class="s6">rem</span><span class="s0">) {</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-container </span><span class="s0">{</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s5">80</span><span class="s6">rem</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-item </span><span class="s0">{</span>
+    <span class="s3">grid-column</span><span class="s4">: </span><span class="s6">span </span><span class="s5">6</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-item</span><span class="s4">:</span><span class="s1">nth-of-type</span><span class="s0">(</span><span class="s5">3</span><span class="s0">) {</span>
+    <span class="s3">order</span><span class="s4">: </span><span class="s5">4</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-background </span><span class="s0">{</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">45</span><span class="s0">%;</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+<span class="s7">/* Desktop - 1024px */</span>
+<span class="s8">@media </span><span class="s6">only screen </span><span class="s1">and </span><span class="s0">(</span><span class="s3">min-width</span><span class="s4">: </span><span class="s5">64</span><span class="s6">rem</span><span class="s0">) {</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-container </span><span class="s0">{</span>
+    <span class="s3">flex-direction</span><span class="s4">: </span><span class="s6">row</span><span class="s0">;</span>
+    <span class="s3">justify-content</span><span class="s4">: </span><span class="s6">space-between</span><span class="s0">;</span>
+    <span class="s3">align-items</span><span class="s4">: </span><span class="s6">center</span><span class="s0">;</span>
+    <span class="s3">gap</span><span class="s4">: </span><span class="s5">2.5</span><span class="s6">rem</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-content </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">50</span><span class="s0">%;</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s5">65</span><span class="s6">rem</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-wrapper </span><span class="s0">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">50</span><span class="s0">%;</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s5">39.375</span><span class="s6">rem</span><span class="s0">;</span>
+    <span class="s7">/* sends it to the left */</span>
+    <span class="s3">order</span><span class="s4">: </span><span class="s0">-</span><span class="s5">1</span><span class="s0">;</span>
+    <span class="s3">position</span><span class="s4">: </span><span class="s6">relative</span><span class="s0">;</span>
+  <span class="s0">}</span>
+
+  <span class="s7">/* hier die Breite der Textboxen*/</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-item </span><span class="s0">{</span>
+    <span class="s3">grid-column</span><span class="s4">: </span><span class="s6">span </span><span class="s5">10</span><span class="s0">;</span>
+    <span class="s3">grid-row</span><span class="s4">: </span><span class="s6">span </span><span class="s5">20</span><span class="s0">;</span>
+  <span class="s0">}</span>
+  <span class="s1">#services-1269 </span><span class="s0">.</span><span class="s1">cs-background </span><span class="s0">{</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">150</span><span class="s0">%;</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s5">115</span><span class="s0">%;</span>
+    <span class="s3">top</span><span class="s4">: </span><span class="s5">50</span><span class="s0">%;</span>
+    <span class="s3">left</span><span class="s4">: </span><span class="s5">50</span><span class="s0">%;</span>
+    <span class="s3">transform</span><span class="s4">: </span><span class="s1">translate</span><span class="s0">(-</span><span class="s5">50</span><span class="s0">%, -</span><span class="s5">50</span><span class="s0">%);</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+</pre>
+</body>
+</html>

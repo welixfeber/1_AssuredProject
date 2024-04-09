@@ -1,0 +1,268 @@
+<html>
+<head>
+<title>hero.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #7a7e85;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #6aab73;}
+.s4 { color: #d5b778;}
+.s5 { color: #bcbec4;}
+.s6 { color: #bababa;}
+.s7 { color: #bcbec4;}
+.s8 { color: #2aacb8;}
+.s9 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+hero.css</font>
+</center></td></tr></table>
+<pre>
+
+<span class="s1">/*-- -------------------------- --&gt; 
+&lt;---           Hero             --&gt; 
+&lt;--- -------------------------- -*/</span>
+
+<span class="s1">/* Mobile - 360px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">min-width</span><span class="s7">: </span><span class="s8">0</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">#hero-1619 </span><span class="s5">{</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--sectionPadding</span><span class="s5">);</span>
+    <span class="s1">/* 200px - 300px - leaving extra space for the navigation */</span>
+    <span class="s6">padding-top</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">12.5</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">31.95</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">18.75</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-container </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s8">80</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">flex-direction</span><span class="s7">: </span><span class="s3">column</span><span class="s5">;</span>
+    <span class="s1">/* 60px - 180px */</span>
+    <span class="s6">gap</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">3.75</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">13</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">11.25</span><span class="s3">rem</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-content </span><span class="s5">{</span>
+    <span class="s1">/* set text align to left if content needs to be left aligned */</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">left</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s8">48.75</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">flex-direction</span><span class="s7">: </span><span class="s3">column</span><span class="s5">;</span>
+    <span class="s1">/* centers content horizontally, set to flex-start to left align */</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">flex-start</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-topper </span><span class="s5">{</span>
+    <span class="s1">/* 13px - 16px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">0.8125</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">1.5</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.2</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">font-weight</span><span class="s7">: </span><span class="s8">700</span><span class="s5">;</span>
+    <span class="s6">letter-spacing</span><span class="s7">: </span><span class="s8">0.1</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">text-transform</span><span class="s7">: </span><span class="s3">uppercase</span><span class="s5">;</span>
+    <span class="s6">margin-bottom</span><span class="s7">: </span><span class="s8">0.25</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--primary</span><span class="s5">);</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">gap</span><span class="s7">: </span><span class="s8">0.5</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-chevron </span><span class="s5">{</span>
+    <span class="s6">--chevronColor</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--primary</span><span class="s5">);</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">3</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-title </span><span class="s5">{</span>
+    <span class="s1">/* 39px - 61px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">2.4375</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">6.4</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">3.8125</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">font-weight</span><span class="s7">: </span><span class="s8">700</span><span class="s5">;</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.2</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">inherit</span><span class="s5">;</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0 0 2.5</span><span class="s3">rem </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-text </span><span class="s5">{</span>
+    <span class="s1">/* 16px - 20px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">1</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">1.95</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1.25</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.5</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">inherit</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s1">/* 464px - 622px */</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">29</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">60</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">38.785</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0 0 2.5</span><span class="s3">rem </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-button-solid </span><span class="s5">{</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s1">/* 46px - 56px */</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">2.875</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">5.5</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">3.5</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">text-decoration</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">font-weight</span><span class="s7">: </span><span class="s8">700</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0 1.5</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--primary</span><span class="s5">);</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">inline-block</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-button-solid</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">content</span><span class="s7">: </span><span class="s3">''</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">0</span><span class="s5">%;</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s9">#000</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s5">-</span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">width </span><span class="s8">.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-button-solid</span><span class="s7">:</span><span class="s4">hover</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-card-group </span><span class="s5">{</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">grid</span><span class="s5">;</span>
+    <span class="s6">grid-template-columns</span><span class="s7">: </span><span class="s4">repeat</span><span class="s5">(</span><span class="s8">12</span><span class="s5">, </span><span class="s8">1</span><span class="s3">fr</span><span class="s5">);</span>
+    <span class="s1">/* 16px - 20px */</span>
+    <span class="s6">gap</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">1</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">2.3</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1.25</span><span class="s3">rem</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-item </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">left</span><span class="s5">;</span>
+    <span class="s6">list-style</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s1">/* 24px - 32px */</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">1.5</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">3</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">2</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">box-shadow</span><span class="s7">: </span><span class="s8">0</span><span class="s3">px </span><span class="s8">12</span><span class="s3">px </span><span class="s8">80</span><span class="s3">px </span><span class="s8">0</span><span class="s3">px </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">26</span><span class="s5">, </span><span class="s8">26</span><span class="s5">, </span><span class="s8">26</span><span class="s5">, </span><span class="s8">0.08</span><span class="s5">);</span>
+    <span class="s1">/* prevents padding from affecting height and width */</span>
+    <span class="s6">box-sizing</span><span class="s7">: </span><span class="s3">border-box</span><span class="s5">;</span>
+    <span class="s6">grid-column</span><span class="s7">: </span><span class="s3">span </span><span class="s8">12</span><span class="s5">;</span>
+    <span class="s6">grid-row</span><span class="s7">: </span><span class="s3">span </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">flex-direction</span><span class="s7">: </span><span class="s3">column</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">flex-start</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-icon </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">3</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0 0 1.5</span><span class="s3">rem </span><span class="s8">0</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-h3 </span><span class="s5">{</span>
+    <span class="s1">/* 20px - 25px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">1.25</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">2.5</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1.5625</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.2</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">font-weight</span><span class="s7">: </span><span class="s3">bold</span><span class="s5">;</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">inherit</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0 0 1</span><span class="s3">rem </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--headerColor</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-item-text </span><span class="s5">{</span>
+    <span class="s1">/* 14px - 16px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">0.875</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">1.5</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">font-weight</span><span class="s7">: </span><span class="s8">500</span><span class="s5">;</span>
+    <span class="s6">font-style</span><span class="s7">: </span><span class="s3">normal</span><span class="s5">;</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.5</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s8">28.125</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--bodyTextColor</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-background </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">55</span><span class="s5">%;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s5">-</span><span class="s8">2</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-background</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s1">/* Overlay */</span>
+    <span class="s6">content</span><span class="s7">: </span><span class="s3">''</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s9">#111926</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">.8</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s1">/* prevents the cursor from interacting with it */</span>
+    <span class="s6">pointer-events</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-background img </span><span class="s5">{</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">object-fit</span><span class="s7">: </span><span class="s3">cover</span><span class="s5">;</span>
+    <span class="s1">/* makes the top of the image start at the top of the parent */</span>
+    <span class="s6">object-position</span><span class="s7">: </span><span class="s3">top</span><span class="s5">;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+<span class="s1">/* Tablet - 768px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">min-width</span><span class="s7">: </span><span class="s8">48</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">#hero-1619 </span><span class="s5">{</span>
+    <span class="s6">padding-bottom</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-container </span><span class="s5">{</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">flex-start</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-content </span><span class="s5">{</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">left</span><span class="s5">;</span>
+    <span class="s6">margin-left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">flex-start</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-item </span><span class="s5">{</span>
+    <span class="s6">grid-column</span><span class="s7">: </span><span class="s3">span </span><span class="s8">6</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-background </span><span class="s5">{</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">87</span><span class="s5">%;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-background</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s4">linear-gradient</span><span class="s5">(</span><span class="s8">90</span><span class="s3">deg</span><span class="s5">, </span><span class="s9">#111926 </span><span class="s8">21.41</span><span class="s5">%, </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">17</span><span class="s5">, </span><span class="s8">25</span><span class="s5">, </span><span class="s8">38</span><span class="s5">, </span><span class="s8">0.72</span><span class="s5">) </span><span class="s8">34.98</span><span class="s5">%, </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">17</span><span class="s5">, </span><span class="s8">25</span><span class="s5">, </span><span class="s8">38</span><span class="s5">, </span><span class="s8">0</span><span class="s5">) </span><span class="s8">62.53</span><span class="s5">%);</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+<span class="s1">/* Large Desktop - 1300px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">min-width</span><span class="s7">: </span><span class="s8">81.25</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-item </span><span class="s5">{</span>
+    <span class="s6">grid-column</span><span class="s7">: </span><span class="s3">span </span><span class="s8">3</span><span class="s5">;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+<span class="s1">/* Large Desktop Parallax Effect - 100px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">min-width</span><span class="s7">: </span><span class="s8">100</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-background </span><span class="s5">{</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s4">url</span><span class="s5">(</span><span class="s3">&quot;https://images.pexels.com/photos/6348142/pexels-photo-6348142.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2&quot;</span><span class="s5">);</span>
+    <span class="s6">background-size</span><span class="s7">: </span><span class="s3">cover</span><span class="s5">;</span>
+    <span class="s6">background-position</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">background-repeat</span><span class="s7">: </span><span class="s3">no-repeat</span><span class="s5">;</span>
+    <span class="s1">/* creates the parallax effect */</span>
+    <span class="s6">background-attachment</span><span class="s7">: </span><span class="s3">fixed</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#hero-1619 </span><span class="s5">.</span><span class="s4">cs-background img </span><span class="s5">{</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>styles.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #d5b778;}
+.s5 { color: #bababa;}
+.s6 { color: #bcbec4;}
+.s7 { color: #2aacb8;}
+.s8 { color: #7a7e85;}
+.s9 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+styles.css</font>
+</center></td></tr></table>
+<pre><span class="s0">@import </span><span class="s2">&quot;navigation.css&quot;</span><span class="s3">;</span>
+<span class="s0">@import </span><span class="s2">&quot;hero.css&quot;</span><span class="s3">;</span>
+<span class="s0">@import </span><span class="s2">&quot;timeline.css&quot;</span><span class="s3">;</span>
+<span class="s0">@import </span><span class="s2">&quot;footer.css&quot;</span><span class="s3">;</span>
+<span class="s0">@import </span><span class="s2">&quot;services.css&quot;</span><span class="s3">;</span>
+
+
+<span class="s4">body </span><span class="s3">{</span>
+  <span class="s5">font-family</span><span class="s6">: </span><span class="s4">Krub</span><span class="s3">, </span><span class="s2">sans-serif</span><span class="s3">;</span>
+  <span class="s5">font-weight</span><span class="s6">: </span><span class="s7">500</span><span class="s3">;</span>
+  <span class="s5">font-style</span><span class="s6">: </span><span class="s2">normal</span><span class="s3">;</span>
+  <span class="s5">margin</span><span class="s6">: </span><span class="s7">20</span><span class="s2">px</span><span class="s3">;</span>
+  <span class="s5">padding</span><span class="s6">: </span><span class="s7">20</span><span class="s2">px</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s4">h1 </span><span class="s3">{</span>
+  <span class="s5">color</span><span class="s6">: </span><span class="s2">navy</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s4">#header </span><span class="s3">{</span>
+  <span class="s5">position</span><span class="s6">: </span><span class="s2">absolute</span><span class="s3">; </span><span class="s8">/* or 'absolute', depending on your layout */</span>
+  <span class="s5">top</span><span class="s6">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s5">width</span><span class="s6">: </span><span class="s7">100</span><span class="s3">%;</span>
+  <span class="s5">transition</span><span class="s6">: </span><span class="s2">top </span><span class="s7">0.4</span><span class="s2">s</span><span class="s3">; </span><span class="s8">/* Smooth transition for the hide/show effect */</span>
+<span class="s3">}</span>
+
+
+
+<span class="s6">:</span><span class="s4">root </span><span class="s3">{</span>
+  <span class="s8">/* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */</span>
+  <span class="s5">--primary</span><span class="s6">: </span><span class="s9">#459F9D</span><span class="s3">;</span>
+  <span class="s5">--primaryLight</span><span class="s6">: </span><span class="s9">#ffba43</span><span class="s3">;</span>
+  <span class="s5">--secondary</span><span class="s6">: </span><span class="s9">#ffba43</span><span class="s3">;</span>
+  <span class="s5">--secondaryLight</span><span class="s6">: </span><span class="s9">#ffba43</span><span class="s3">;</span>
+  <span class="s5">--headerColor</span><span class="s6">: </span><span class="s9">#1E1F2F</span><span class="s3">;</span>
+  <span class="s5">--bodyTextColor</span><span class="s6">: </span><span class="s9">#4e4b66</span><span class="s3">;</span>
+  <span class="s5">--bodyTextColorWhite</span><span class="s6">: </span><span class="s9">#fafbfc</span><span class="s3">;</span>
+  <span class="s8">/* 13px - 16px */</span>
+  <span class="s5">--item-text-weight</span><span class="s6">: </span><span class="s2">normal</span><span class="s3">;</span>
+  <span class="s5">--topperFontSize</span><span class="s6">: </span><span class="s4">clamp</span><span class="s3">(</span><span class="s7">0.8125</span><span class="s2">rem</span><span class="s3">, </span><span class="s7">1.6</span><span class="s2">vw</span><span class="s3">, </span><span class="s7">1</span><span class="s2">rem</span><span class="s3">);</span>
+  <span class="s5">--footerFontSize</span><span class="s6">: </span><span class="s4">clamp</span><span class="s3">(</span><span class="s7">0.8125</span><span class="s2">rem</span><span class="s3">, </span><span class="s7">2.4</span><span class="s2">vw</span><span class="s3">, </span><span class="s7">1.5</span><span class="s2">rem</span><span class="s3">);</span>
+  <span class="s8">/* 31px - 49px */</span>
+  <span class="s5">--headerFontSize</span><span class="s6">: </span><span class="s4">clamp</span><span class="s3">(</span><span class="s7">3.9375</span><span class="s2">rem</span><span class="s3">, </span><span class="s7">4.9</span><span class="s2">vw</span><span class="s3">, </span><span class="s7">4.0625</span><span class="s2">rem</span><span class="s3">);</span>
+  <span class="s5">--h1-font-size</span><span class="s6">: </span><span class="s4">clamp</span><span class="s3">(</span><span class="s7">2.5</span><span class="s2">rem</span><span class="s3">, </span><span class="s7">5</span><span class="s2">vw</span><span class="s3">, </span><span class="s7">3</span><span class="s2">rem</span><span class="s3">); </span><span class="s8">/* Example, adjust as needed */</span>
+  <span class="s5">--h2-font-size</span><span class="s6">: </span><span class="s4">clamp</span><span class="s3">(</span><span class="s7">2</span><span class="s2">rem</span><span class="s3">, </span><span class="s7">4.5</span><span class="s2">vw</span><span class="s3">, </span><span class="s7">2.5</span><span class="s2">rem</span><span class="s3">);</span>
+  <span class="s5">--bodyFontSize</span><span class="s6">: </span><span class="s7">1</span><span class="s2">rem</span><span class="s3">;</span>
+  <span class="s8">/* 60px - 100px top and bottom */</span>
+  <span class="s5">--sectionPadding</span><span class="s6">: </span><span class="s4">clamp</span><span class="s3">(</span><span class="s7">3.75</span><span class="s2">rem</span><span class="s3">, </span><span class="s7">7.82</span><span class="s2">vw</span><span class="s3">, </span><span class="s7">6.25</span><span class="s2">rem</span><span class="s3">) </span><span class="s7">1</span><span class="s2">rem</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+
+<span class="s4">*</span><span class="s3">, </span><span class="s4">*</span><span class="s6">:</span><span class="s4">before</span><span class="s3">, </span><span class="s4">*</span><span class="s6">:</span><span class="s4">after </span><span class="s3">{</span>
+  <span class="s8">/* prevents padding from affecting height and width */</span>
+  <span class="s5">box-sizing</span><span class="s6">: </span><span class="s2">border-box</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s4">cs-topper </span><span class="s3">{</span>
+  <span class="s5">font-size</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--topperFontSize</span><span class="s3">);</span>
+  <span class="s5">line-height</span><span class="s6">: </span><span class="s7">1.2</span><span class="s2">em</span><span class="s3">;</span>
+  <span class="s5">text-transform</span><span class="s6">: </span><span class="s2">uppercase</span><span class="s3">;</span>
+  <span class="s5">text-align</span><span class="s6">: </span><span class="s2">inherit</span><span class="s3">;</span>
+  <span class="s5">letter-spacing</span><span class="s6">: </span><span class="s7">.1</span><span class="s2">em</span><span class="s3">;</span>
+  <span class="s5">font-weight</span><span class="s6">: </span><span class="s7">500</span><span class="s3">;</span>
+  <span class="s5">color</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--primary</span><span class="s3">);</span>
+  <span class="s5">margin-bottom</span><span class="s6">: </span><span class="s7">0.25</span><span class="s2">rem</span><span class="s3">;</span>
+  <span class="s5">display</span><span class="s6">: </span><span class="s2">block</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s3">.</span><span class="s4">cs-footer</span><span class="s3">{</span>
+  <span class="s5">font-size</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--footerFontSize</span><span class="s3">);</span>
+  <span class="s5">line-height</span><span class="s6">: </span><span class="s7">1.2</span><span class="s2">em</span><span class="s3">;</span>
+  <span class="s5">text-transform</span><span class="s6">: </span><span class="s2">uppercase</span><span class="s3">;</span>
+  <span class="s5">text-align</span><span class="s6">: </span><span class="s2">center</span><span class="s3">;</span>
+  <span class="s5">letter-spacing</span><span class="s6">: </span><span class="s7">.15</span><span class="s2">em</span><span class="s3">;</span>
+  <span class="s5">font-weight</span><span class="s6">: </span><span class="s7">500</span><span class="s3">;</span>
+  <span class="s5">color</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--primary</span><span class="s3">);</span>
+  <span class="s5">margin-bottom</span><span class="s6">: </span><span class="s7">0.25</span><span class="s2">rem</span><span class="s3">;</span>
+  <span class="s5">display</span><span class="s6">: </span><span class="s2">block</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s3">.</span><span class="s4">cs-title </span><span class="s3">{</span>
+  <span class="s5">font-size</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--headerFontSize</span><span class="s3">);</span>
+  <span class="s5">font-weight</span><span class="s6">: </span><span class="s7">700</span><span class="s3">;</span>
+  <span class="s5">line-height</span><span class="s6">: </span><span class="s7">1.2</span><span class="s2">em</span><span class="s3">;</span>
+  <span class="s5">text-align</span><span class="s6">: </span><span class="s2">inherit</span><span class="s3">;</span>
+  <span class="s5">max-width</span><span class="s6">: </span><span class="s7">43.75</span><span class="s2">rem</span><span class="s3">;</span>
+  <span class="s5">margin</span><span class="s6">: </span><span class="s7">0 0 1</span><span class="s2">rem </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s5">color</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--headerColor</span><span class="s3">);</span>
+  <span class="s5">position</span><span class="s6">: </span><span class="s2">relative</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s3">.</span><span class="s4">cs-text </span><span class="s3">{</span>
+  <span class="s5">font-weight</span><span class="s6">: </span><span class="s7">400</span><span class="s3">;</span>
+  <span class="s5">font-style</span><span class="s6">: </span><span class="s2">normal</span><span class="s3">;</span>
+  <span class="s5">font-size</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--bodyFontSize</span><span class="s3">);</span>
+  <span class="s5">line-height</span><span class="s6">: </span><span class="s7">1.5</span><span class="s2">em</span><span class="s3">;</span>
+  <span class="s5">text-align</span><span class="s6">: </span><span class="s2">inherit</span><span class="s3">;</span>
+  <span class="s5">width</span><span class="s6">: </span><span class="s7">100</span><span class="s3">%;</span>
+  <span class="s5">max-width</span><span class="s6">: </span><span class="s7">40.625</span><span class="s2">rem</span><span class="s3">;</span>
+  <span class="s5">margin</span><span class="s6">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s5">color</span><span class="s6">: </span><span class="s4">var</span><span class="s3">(</span><span class="s4">--bodyTextColor</span><span class="s3">);</span>
+<span class="s3">}</span>
+</pre>
+</body>
+</html>

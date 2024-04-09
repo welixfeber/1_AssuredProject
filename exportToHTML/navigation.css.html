@@ -1,0 +1,564 @@
+<html>
+<head>
+<title>navigation.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #7a7e85;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #6aab73;}
+.s4 { color: #d5b778;}
+.s5 { color: #bcbec4;}
+.s6 { color: #bababa;}
+.s7 { color: #bcbec4;}
+.s8 { color: #2aacb8;}
+.s9 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+navigation.css</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">/*-- -------------------------- --&gt; 
+&lt;---     Mobile Navigation      --&gt; 
+&lt;--- -------------------------- -*/</span>
+
+<span class="s1">/* Mobile - 1023px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">max-width</span><span class="s7">: </span><span class="s8">63.9375</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">body</span><span class="s5">.</span><span class="s4">cs-open </span><span class="s5">{</span>
+    <span class="s6">overflow</span><span class="s7">: </span><span class="s3">hidden</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s1">/* prevents padding and border from affecting height and width */</span>
+    <span class="s6">box-sizing</span><span class="s7">: </span><span class="s3">border-box</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0.75</span><span class="s3">rem </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">box-shadow</span><span class="s7">: </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">149</span><span class="s5">, </span><span class="s8">157</span><span class="s5">, </span><span class="s8">165</span><span class="s5">, </span><span class="s8">0.2</span><span class="s5">) </span><span class="s8">0</span><span class="s3">px </span><span class="s8">8</span><span class="s3">px </span><span class="s8">24</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">fixed</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">10000</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">content</span><span class="s7">: </span><span class="s3">&quot;&quot;</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">0</span><span class="s3">vh</span><span class="s5">;</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">0</span><span class="s5">, </span><span class="s8">0</span><span class="s5">, </span><span class="s8">0</span><span class="s5">, </span><span class="s8">0.6</span><span class="s5">);</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">right</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s5">-</span><span class="s8">1100</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">height </span><span class="s8">0.5</span><span class="s3">s</span><span class="s5">, </span><span class="s3">opacity </span><span class="s8">0.5</span><span class="s3">s</span><span class="s5">;</span>
+    <span class="s6">-webkit-backdrop-filter</span><span class="s7">: </span><span class="s4">blur</span><span class="s5">(</span><span class="s8">10</span><span class="s3">px</span><span class="s5">);</span>
+    <span class="s6">backdrop-filter</span><span class="s7">: </span><span class="s4">blur</span><span class="s5">(</span><span class="s8">10</span><span class="s3">px</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation</span><span class="s5">.</span><span class="s4">cs-active</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">150</span><span class="s3">vh</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation</span><span class="s5">.</span><span class="s4">cs-active </span><span class="s5">.</span><span class="s4">cs-ul-wrapper </span><span class="s5">{</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">scaleY</span><span class="s5">(</span><span class="s8">1</span><span class="s5">);</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.15</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation</span><span class="s5">.</span><span class="s4">cs-active </span><span class="s5">.</span><span class="s4">cs-li </span><span class="s5">{</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translateY</span><span class="s5">(</span><span class="s8">0</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-container </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">flex-end</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-logo </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">40</span><span class="s5">%;</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s8">9.125</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0 </span><span class="s3">auto </span><span class="s8">0 0</span><span class="s5">;</span>
+    <span class="s1">/* prevents padding and border from affecting height and width */</span>
+    <span class="s6">box-sizing</span><span class="s7">: </span><span class="s3">border-box</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">10</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-logo img </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s1">/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */</span>
+    <span class="s6">object-fit</span><span class="s7">: </span><span class="s3">contain</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-toggle </span><span class="s5">{</span>
+    <span class="s1">/* 44px - 48px */</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">2.75</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">6</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">3</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">2.75</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">6</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">3</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0 0 0 </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s3">transparent</span><span class="s5">;</span>
+    <span class="s6">border</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">border-radius</span><span class="s7">: </span><span class="s8">0.25</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-active </span><span class="s5">.</span><span class="s4">cs-line1 </span><span class="s5">{</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">50</span><span class="s5">%;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translate</span><span class="s5">(-</span><span class="s8">50</span><span class="s5">%, -</span><span class="s8">50</span><span class="s5">%) </span><span class="s4">rotate</span><span class="s5">(</span><span class="s8">225</span><span class="s3">deg</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-active </span><span class="s5">.</span><span class="s4">cs-line2 </span><span class="s5">{</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">50</span><span class="s5">%;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translate</span><span class="s5">(-</span><span class="s8">50</span><span class="s5">%, -</span><span class="s8">50</span><span class="s5">%) </span><span class="s4">translateY</span><span class="s5">(</span><span class="s8">0</span><span class="s5">) </span><span class="s4">rotate</span><span class="s5">(-</span><span class="s8">225</span><span class="s3">deg</span><span class="s5">);</span>
+    <span class="s6">transform-origin</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-active </span><span class="s5">.</span><span class="s4">cs-line3 </span><span class="s5">{</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">bottom</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-box </span><span class="s5">{</span>
+    <span class="s1">/* 24px - 28px */</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">1.5</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">2</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1.75</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s1">/* 14px - 16px */</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">0.875</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">1.5</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-line </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">2</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s9">#1a1a1a</span><span class="s5">;</span>
+    <span class="s6">border-radius</span><span class="s7">: </span><span class="s8">2</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">50</span><span class="s5">%;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translateX</span><span class="s5">(-</span><span class="s8">50</span><span class="s5">%);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-line1 </span><span class="s5">{</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s4">transform </span><span class="s8">0.5</span><span class="s3">s</span><span class="s5">, </span><span class="s3">top </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">left </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+    <span class="s6">animation-duration</span><span class="s7">: </span><span class="s8">0.7</span><span class="s3">s</span><span class="s5">;</span>
+    <span class="s6">animation-timing-function</span><span class="s7">: </span><span class="s3">ease</span><span class="s5">;</span>
+    <span class="s6">animation-direction</span><span class="s7">: </span><span class="s3">normal</span><span class="s5">;</span>
+    <span class="s6">animation-fill-mode</span><span class="s7">: </span><span class="s3">forwards</span><span class="s5">;</span>
+    <span class="s6">transform-origin</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-line2 </span><span class="s5">{</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">50</span><span class="s5">%;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translateX</span><span class="s5">(-</span><span class="s8">50</span><span class="s5">%) </span><span class="s4">translateY</span><span class="s5">(-</span><span class="s8">50</span><span class="s5">%);</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">top </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">left </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s4">transform </span><span class="s8">0.5</span><span class="s3">s</span><span class="s5">;</span>
+    <span class="s6">animation-duration</span><span class="s7">: </span><span class="s8">0.7</span><span class="s3">s</span><span class="s5">;</span>
+    <span class="s6">animation-timing-function</span><span class="s7">: </span><span class="s3">ease</span><span class="s5">;</span>
+    <span class="s6">animation-direction</span><span class="s7">: </span><span class="s3">normal</span><span class="s5">;</span>
+    <span class="s6">animation-fill-mode</span><span class="s7">: </span><span class="s3">forwards</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-line3 </span><span class="s5">{</span>
+    <span class="s6">bottom</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">bottom </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">opacity </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-ul-wrapper </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">padding-bottom</span><span class="s7">: </span><span class="s8">2.4</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">box-shadow</span><span class="s7">: </span><span class="s3">inset </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">0</span><span class="s5">, </span><span class="s8">0</span><span class="s5">, </span><span class="s8">0</span><span class="s5">, </span><span class="s8">0.2</span><span class="s5">) </span><span class="s8">0</span><span class="s3">px </span><span class="s8">8</span><span class="s3">px </span><span class="s8">24</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s5">-</span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">overflow</span><span class="s7">: </span><span class="s3">hidden</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">scaleY</span><span class="s5">(</span><span class="s8">0</span><span class="s5">);</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s4">transform </span><span class="s8">0.4</span><span class="s3">s</span><span class="s5">, </span><span class="s3">opacity </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+    <span class="s6">transform-origin</span><span class="s7">: </span><span class="s3">top</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-ul </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">max-height</span><span class="s7">: </span><span class="s8">65</span><span class="s3">vh</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">3</span><span class="s3">rem </span><span class="s8">0 0 0</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">flex-direction</span><span class="s7">: </span><span class="s3">column</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">flex-start</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">gap</span><span class="s7">: </span><span class="s8">1.25</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">overflow</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li </span><span class="s5">{</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">list-style</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">margin-right</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s1">/* transition from these values */</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translateY</span><span class="s5">(-</span><span class="s8">4.375</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s4">transform </span><span class="s8">0.6</span><span class="s3">s</span><span class="s5">, </span><span class="s3">opacity </span><span class="s8">0.9</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">1</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.05</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">2</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.1</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">3</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.15</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">4</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.2</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">5</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.25</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">6</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">7</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.35</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">8</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.4</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">9</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.45</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">10</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.5</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">11</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.55</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">12</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.6</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">13</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.65</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link </span><span class="s5">{</span>
+    <span class="s1">/* 16px - 24px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">1</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">2.5</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1.5</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.2</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">text-decoration</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--headerColor</span><span class="s5">);</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">inline-block</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s1">/* active state underline */</span>
+    <span class="s6">content</span><span class="s7">: </span><span class="s3">&quot;&quot;</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">1</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s3">currentColor</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">bottom</span><span class="s7">: </span><span class="s5">-</span><span class="s8">0.125</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s5">.</span><span class="s4">cs-active</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-button-solid </span><span class="s5">{</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+
+
+
+<span class="s1">/*-- -------------------------- --&gt; 
+&lt;---     Navigation Dropdown    --&gt; 
+&lt;--- -------------------------- -*/</span>
+<span class="s1">/* Mobile - 1023px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">max-width</span><span class="s7">: </span><span class="s8">63.9375</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li </span><span class="s5">{</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown </span><span class="s5">{</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--bodyTextColorWhite</span><span class="s5">);</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s5">.</span><span class="s4">cs-active </span><span class="s5">.</span><span class="s4">cs-drop-ul </span><span class="s5">{</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0.75</span><span class="s3">rem </span><span class="s8">0 0 0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0.75</span><span class="s3">rem </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">visibility</span><span class="s7">: </span><span class="s3">visible</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s5">.</span><span class="s4">cs-active </span><span class="s5">.</span><span class="s4">cs-drop-link </span><span class="s5">{</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown </span><span class="s5">.</span><span class="s4">cs-li-link </span><span class="s5">{</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">opacity </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-icon </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">0.9375</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">50</span><span class="s5">%;</span>
+    <span class="s6">right</span><span class="s7">: </span><span class="s5">-</span><span class="s8">1.25</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translateY</span><span class="s5">(-</span><span class="s8">50</span><span class="s5">%);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-ul </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">0</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--primary</span><span class="s5">);</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">visibility</span><span class="s7">: </span><span class="s3">hidden</span><span class="s5">;</span>
+    <span class="s6">flex-direction</span><span class="s7">: </span><span class="s3">column</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">flex-start</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">gap</span><span class="s7">: </span><span class="s8">0.75</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">overflow</span><span class="s7">: </span><span class="s3">hidden</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">padding </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">margin </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">height </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">opacity </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">visibility </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li </span><span class="s5">{</span>
+    <span class="s6">list-style</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s5">.</span><span class="s4">cs-drop-link </span><span class="s5">{</span>
+    <span class="s1">/* 14px - 16px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">0.875</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">2</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1.25</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s9">#fff</span><span class="s5">;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+<span class="s1">/* Desktop - 1024px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">min-width</span><span class="s7">: </span><span class="s8">64</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown </span><span class="s5">{</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s7">:</span><span class="s4">hover</span><span class="s5">,</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s7">:</span><span class="s4">focus-within </span><span class="s5">{</span>
+    <span class="s6">cursor</span><span class="s7">: </span><span class="s3">pointer</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s7">:</span><span class="s4">hover </span><span class="s5">.</span><span class="s4">cs-drop-ul</span><span class="s5">,</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s7">:</span><span class="s4">focus-within </span><span class="s5">.</span><span class="s4">cs-drop-ul </span><span class="s5">{</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">visibility</span><span class="s7">: </span><span class="s3">visible</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">scaleY</span><span class="s5">(</span><span class="s8">1</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s7">:</span><span class="s4">hover </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s5">,</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-dropdown</span><span class="s7">:</span><span class="s4">focus-within </span><span class="s5">.</span><span class="s4">cs-drop-li </span><span class="s5">{</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translateY</span><span class="s5">(</span><span class="s8">0</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-icon </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">0.9375</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">inline-block</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-ul </span><span class="s5">{</span>
+    <span class="s6">min-width</span><span class="s7">: </span><span class="s8">12.5</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">box-shadow</span><span class="s7">: </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">149</span><span class="s5">, </span><span class="s8">157</span><span class="s5">, </span><span class="s8">165</span><span class="s5">, </span><span class="s8">0.2</span><span class="s5">) </span><span class="s8">0</span><span class="s3">px </span><span class="s8">10</span><span class="s3">px </span><span class="s8">16</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">border-bottom</span><span class="s7">: </span><span class="s8">5</span><span class="s3">px solid </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--primary</span><span class="s5">);</span>
+    <span class="s6">visibility</span><span class="s7">: </span><span class="s3">hidden</span><span class="s5">;</span>
+    <span class="s1">/* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s5">-</span><span class="s8">100</span><span class="s5">;</span>
+    <span class="s6">overflow</span><span class="s7">: </span><span class="s3">hidden</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">scaleY</span><span class="s5">(</span><span class="s8">0</span><span class="s5">);</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s4">transform </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">visibility </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">opacity </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+    <span class="s6">transform-origin</span><span class="s7">: </span><span class="s3">top</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li </span><span class="s5">{</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">text-decoration</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">list-style</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--bodyTextColor</span><span class="s5">);</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">transform</span><span class="s7">: </span><span class="s4">translateY</span><span class="s5">(-</span><span class="s8">0.625</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">opacity </span><span class="s8">0.6</span><span class="s3">s</span><span class="s5">, </span><span class="s4">transform </span><span class="s8">0.6</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">1</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.05</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">2</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.1</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">3</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.15</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">4</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.2</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">5</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.25</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">6</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">7</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.35</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">8</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.4</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-drop-li</span><span class="s7">:</span><span class="s4">nth-of-type</span><span class="s5">(</span><span class="s8">9</span><span class="s5">) {</span>
+    <span class="s6">transition-delay</span><span class="s7">: </span><span class="s8">0.45</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s5">.</span><span class="s4">cs-drop-link </span><span class="s5">{</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.5</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">text-decoration</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">white-space</span><span class="s7">: </span><span class="s3">nowrap</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s1">/* prevents padding and border from affecting height and width */</span>
+    <span class="s6">box-sizing</span><span class="s7">: </span><span class="s3">border-box</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0.75</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--bodyTextColor</span><span class="s5">);</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">color </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">, </span><span class="s3">background-color </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s5">.</span><span class="s4">cs-drop-link</span><span class="s7">:</span><span class="s4">hover</span><span class="s5">,</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s5">.</span><span class="s4">cs-drop-link</span><span class="s7">:</span><span class="s4">focus </span><span class="s5">{</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">outline</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s5">.</span><span class="s4">cs-drop-link</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+<span class="s1">/*-- -------------------------- --&gt; 
+&lt;---     Desktop Navigation     --&gt; 
+&lt;--- -------------------------- -*/</span>
+<span class="s1">/* Small Desktop - 1024px */</span>
+<span class="s2">@media </span><span class="s3">only screen </span><span class="s4">and </span><span class="s5">(</span><span class="s6">min-width</span><span class="s7">: </span><span class="s8">64</span><span class="s3">rem</span><span class="s5">) {</span>
+  <span class="s4">#cs-navigation </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s1">/* prevents padding and border from affecting height and width */</span>
+    <span class="s6">box-sizing</span><span class="s7">: </span><span class="s3">border-box</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0 1</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">box-shadow</span><span class="s7">: </span><span class="s4">rgba</span><span class="s5">(</span><span class="s8">149</span><span class="s5">, </span><span class="s8">157</span><span class="s5">, </span><span class="s8">165</span><span class="s5">, </span><span class="s8">0.2</span><span class="s5">) </span><span class="s8">0</span><span class="s3">px </span><span class="s8">8</span><span class="s3">px </span><span class="s8">24</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">fixed</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">10000</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-container </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s8">80</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s3">auto</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">flex-end</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">gap</span><span class="s7">: </span><span class="s8">1.5</span><span class="s3">rem</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-toggle </span><span class="s5">{</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-logo </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">18.4</span><span class="s5">%;</span>
+    <span class="s6">max-width</span><span class="s7">: </span><span class="s8">21.875</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">4.0625</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s1">/* margin-right auto pushes everything away from it to the right */</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0 </span><span class="s3">auto </span><span class="s8">0 0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">100</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-logo img </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s1">/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */</span>
+    <span class="s6">object-fit</span><span class="s7">: </span><span class="s3">contain</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-ul </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">flex</span><span class="s5">;</span>
+    <span class="s6">justify-content</span><span class="s7">: </span><span class="s3">flex-start</span><span class="s5">;</span>
+    <span class="s6">align-items</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s1">/* 20px - 36px */</span>
+    <span class="s6">gap</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">1.25</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">2.6</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">2.25</span><span class="s3">rem</span><span class="s5">);</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li </span><span class="s5">{</span>
+    <span class="s6">list-style</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">2</span><span class="s3">rem </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s1">/* prevent flexbox from squishing it */</span>
+    <span class="s6">flex</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link </span><span class="s5">{</span>
+    <span class="s1">/* 14px - 16px */</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">0.875</span><span class="s3">rem</span><span class="s5">, </span><span class="s8">1</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">);</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s8">1.5</span><span class="s3">em</span><span class="s5">;</span>
+    <span class="s6">text-decoration</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--bodyTextColor</span><span class="s5">);</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s7">:</span><span class="s4">hover</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s5">.</span><span class="s4">cs-active</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-li-link</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s1">/* active state underline */</span>
+    <span class="s6">content</span><span class="s7">: </span><span class="s3">&quot;&quot;</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">0</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">2</span><span class="s3">px</span><span class="s5">;</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--primary</span><span class="s5">);</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">block</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">bottom</span><span class="s7">: </span><span class="s8">0</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">width </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-button-solid </span><span class="s5">{</span>
+    <span class="s6">font-size</span><span class="s7">: </span><span class="s8">1</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">font-weight</span><span class="s7">: </span><span class="s8">700</span><span class="s5">;</span>
+    <span class="s1">/* 46px - 56px */</span>
+    <span class="s6">line-height</span><span class="s7">: </span><span class="s4">clamp</span><span class="s5">(</span><span class="s8">2.875</span><span class="s3">em</span><span class="s5">, </span><span class="s8">5.5</span><span class="s3">vw</span><span class="s5">, </span><span class="s8">3.5</span><span class="s3">em</span><span class="s5">);</span>
+    <span class="s6">text-align</span><span class="s7">: </span><span class="s3">center</span><span class="s5">;</span>
+    <span class="s6">text-decoration</span><span class="s7">: </span><span class="s3">none</span><span class="s5">;</span>
+    <span class="s6">min-width</span><span class="s7">: </span><span class="s8">9.375</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">margin</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s1">/* prevents padding from adding to the width */</span>
+    <span class="s6">box-sizing</span><span class="s7">: </span><span class="s3">border-box</span><span class="s5">;</span>
+    <span class="s6">padding</span><span class="s7">: </span><span class="s8">0 1.5</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">color</span><span class="s7">: </span><span class="s9">#ffffff</span><span class="s5">;</span>
+    <span class="s6">background-color</span><span class="s7">: </span><span class="s4">var</span><span class="s5">(</span><span class="s4">--primary</span><span class="s5">);</span>
+    <span class="s6">border-radius</span><span class="s7">: </span><span class="s8">0.25</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">display</span><span class="s7">: </span><span class="s3">inline-block</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">relative</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-button-solid</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">content</span><span class="s7">: </span><span class="s3">&quot;&quot;</span><span class="s5">;</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">0</span><span class="s5">%;</span>
+    <span class="s6">height</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+    <span class="s6">background</span><span class="s7">: </span><span class="s9">#000</span><span class="s5">;</span>
+    <span class="s6">opacity</span><span class="s7">: </span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">border-radius</span><span class="s7">: </span><span class="s8">0.25</span><span class="s3">rem</span><span class="s5">;</span>
+    <span class="s6">position</span><span class="s7">: </span><span class="s3">absolute</span><span class="s5">;</span>
+    <span class="s6">top</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">left</span><span class="s7">: </span><span class="s8">0</span><span class="s5">;</span>
+    <span class="s6">z-index</span><span class="s7">: </span><span class="s5">-</span><span class="s8">1</span><span class="s5">;</span>
+    <span class="s6">transition</span><span class="s7">: </span><span class="s3">width </span><span class="s8">0.3</span><span class="s3">s</span><span class="s5">;</span>
+  <span class="s5">}</span>
+  <span class="s4">#cs-navigation </span><span class="s5">.</span><span class="s4">cs-button-solid</span><span class="s7">:</span><span class="s4">hover</span><span class="s7">:</span><span class="s4">before </span><span class="s5">{</span>
+    <span class="s6">width</span><span class="s7">: </span><span class="s8">100</span><span class="s5">%;</span>
+  <span class="s5">}</span>
+<span class="s5">}</span>
+</pre>
+</body>
+</html>

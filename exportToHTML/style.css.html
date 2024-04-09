@@ -1,0 +1,274 @@
+<html>
+<head>
+<title>style.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #d5b778;}
+.s3 { color: #bcbec4;}
+.s4 { color: #bababa;}
+.s5 { color: #bcbec4;}
+.s6 { color: #56a8f5;}
+.s7 { color: #2aacb8;}
+.s8 { color: #6aab73;}
+.s9 { color: #cf8e6d; font-weight: bold;}
+.s10 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+style.css</font>
+</center></td></tr></table>
+<pre><span class="s0">/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */</span>
+
+<span class="s0">/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */</span>
+<span class="s0">/* 
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, 
+ * Kroc Camen, and the H5BP dev community and team. 
+ */</span>
+
+<span class="s0">/* ========================================================================== 
+   Base styles: opinionated defaults 
+   ========================================================================== */</span>
+
+<span class="s2">html </span><span class="s3">{</span>
+  <span class="s4">color</span><span class="s5">: </span><span class="s6">#222</span><span class="s3">;</span>
+  <span class="s4">font-size</span><span class="s5">: </span><span class="s7">1</span><span class="s8">em</span><span class="s3">;</span>
+  <span class="s4">line-height</span><span class="s5">: </span><span class="s7">1.4</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Remove text-shadow in selection highlight: 
+ * https://twitter.com/miketaylr/status/12228805301 
+ * 
+ * Customize the background color to match your design. 
+ */</span>
+
+<span class="s5">::</span><span class="s2">-moz-selection </span><span class="s3">{</span>
+  <span class="s4">background</span><span class="s5">: </span><span class="s6">#b3d4fc</span><span class="s3">;</span>
+  <span class="s4">text-shadow</span><span class="s5">: </span><span class="s8">none</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s5">::</span><span class="s2">selection </span><span class="s3">{</span>
+  <span class="s4">background</span><span class="s5">: </span><span class="s6">#b3d4fc</span><span class="s3">;</span>
+  <span class="s4">text-shadow</span><span class="s5">: </span><span class="s8">none</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * A better looking default horizontal rule 
+ */</span>
+
+<span class="s2">hr </span><span class="s3">{</span>
+  <span class="s4">display</span><span class="s5">: </span><span class="s8">block</span><span class="s3">;</span>
+  <span class="s4">height</span><span class="s5">: </span><span class="s7">1</span><span class="s8">px</span><span class="s3">;</span>
+  <span class="s4">border</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s4">border-top</span><span class="s5">: </span><span class="s7">1</span><span class="s8">px solid </span><span class="s6">#ccc</span><span class="s3">;</span>
+  <span class="s4">margin</span><span class="s5">: </span><span class="s7">1</span><span class="s8">em </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s4">padding</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Remove the gap between audio, canvas, iframes, 
+ * images, videos and the bottom of their containers: 
+ * https://github.com/h5bp/html5-boilerplate/issues/440 
+ */</span>
+
+<span class="s2">audio</span><span class="s3">,</span>
+<span class="s2">canvas</span><span class="s3">,</span>
+<span class="s2">iframe</span><span class="s3">,</span>
+<span class="s2">img</span><span class="s3">,</span>
+<span class="s2">svg</span><span class="s3">,</span>
+<span class="s2">video </span><span class="s3">{</span>
+  <span class="s4">vertical-align</span><span class="s5">: </span><span class="s8">middle</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Remove default fieldset styles. 
+ */</span>
+
+<span class="s2">fieldset </span><span class="s3">{</span>
+  <span class="s4">border</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s4">margin</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s4">padding</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Allow only vertical resizing of textareas. 
+ */</span>
+
+<span class="s2">textarea </span><span class="s3">{</span>
+  <span class="s4">resize</span><span class="s5">: </span><span class="s8">vertical</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* ========================================================================== 
+   Author's custom styles 
+   ========================================================================== */</span>
+
+<span class="s0">/* ========================================================================== 
+   Helper classes 
+   ========================================================================== */</span>
+
+<span class="s0">/* 
+ * Hide visually and from screen readers 
+ */</span>
+
+<span class="s3">.</span><span class="s2">hidden</span><span class="s3">,</span>
+<span class="s3">[</span><span class="s2">hidden</span><span class="s3">] {</span>
+  <span class="s4">display</span><span class="s5">: </span><span class="s8">none </span><span class="s9">!important</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Hide only visually, but have it available for screen readers: 
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility 
+ * 
+ * 1. For long content, line feeds are not interpreted as spaces and small width 
+ *    causes content to wrap 1 word per line: 
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe 
+ */</span>
+
+<span class="s3">.</span><span class="s2">visually-hidden </span><span class="s3">{</span>
+  <span class="s4">border</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s4">clip</span><span class="s5">: </span><span class="s2">rect</span><span class="s3">(</span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">);</span>
+  <span class="s4">height</span><span class="s5">: </span><span class="s7">1</span><span class="s8">px</span><span class="s3">;</span>
+  <span class="s4">margin</span><span class="s5">: </span><span class="s3">-</span><span class="s7">1</span><span class="s8">px</span><span class="s3">;</span>
+  <span class="s4">overflow</span><span class="s5">: </span><span class="s8">hidden</span><span class="s3">;</span>
+  <span class="s4">padding</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s4">position</span><span class="s5">: </span><span class="s8">absolute</span><span class="s3">;</span>
+  <span class="s4">white-space</span><span class="s5">: </span><span class="s8">nowrap</span><span class="s3">;</span>
+  <span class="s4">width</span><span class="s5">: </span><span class="s7">1</span><span class="s8">px</span><span class="s3">;</span>
+  <span class="s0">/* 1 */</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Extends the .visually-hidden class to allow the element 
+ * to be focusable when navigated to via the keyboard: 
+ * https://www.drupal.org/node/897638 
+ */</span>
+
+<span class="s3">.</span><span class="s2">visually-hidden</span><span class="s3">.</span><span class="s2">focusable</span><span class="s5">:</span><span class="s2">active</span><span class="s3">,</span>
+<span class="s3">.</span><span class="s2">visually-hidden</span><span class="s3">.</span><span class="s2">focusable</span><span class="s5">:</span><span class="s2">focus </span><span class="s3">{</span>
+  <span class="s4">clip</span><span class="s5">: </span><span class="s8">auto</span><span class="s3">;</span>
+  <span class="s4">height</span><span class="s5">: </span><span class="s8">auto</span><span class="s3">;</span>
+  <span class="s4">margin</span><span class="s5">: </span><span class="s7">0</span><span class="s3">;</span>
+  <span class="s4">overflow</span><span class="s5">: </span><span class="s8">visible</span><span class="s3">;</span>
+  <span class="s4">position</span><span class="s5">: </span><span class="s8">static</span><span class="s3">;</span>
+  <span class="s4">white-space</span><span class="s5">: </span><span class="s8">inherit</span><span class="s3">;</span>
+  <span class="s4">width</span><span class="s5">: </span><span class="s8">auto</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Hide visually and from screen readers, but maintain layout 
+ */</span>
+
+<span class="s3">.</span><span class="s2">invisible </span><span class="s3">{</span>
+  <span class="s4">visibility</span><span class="s5">: </span><span class="s8">hidden</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* 
+ * Clearfix: contain floats 
+ * 
+ * The use of `table` rather than `block` is only necessary if using 
+ * `::before` to contain the top-margins of child elements. 
+ */</span>
+
+<span class="s3">.</span><span class="s2">clearfix</span><span class="s5">::</span><span class="s2">before</span><span class="s3">,</span>
+<span class="s3">.</span><span class="s2">clearfix</span><span class="s5">::</span><span class="s2">after </span><span class="s3">{</span>
+  <span class="s4">content</span><span class="s5">: </span><span class="s8">&quot;&quot;</span><span class="s3">;</span>
+  <span class="s4">display</span><span class="s5">: </span><span class="s8">table</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s3">.</span><span class="s2">clearfix</span><span class="s5">::</span><span class="s2">after </span><span class="s3">{</span>
+  <span class="s4">clear</span><span class="s5">: </span><span class="s8">both</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s0">/* ========================================================================== 
+   EXAMPLE Media Queries for Responsive Design. 
+   These examples override the primary ('mobile first') styles. 
+   Modify as content requires. 
+   ========================================================================== */</span>
+
+<span class="s10">@media </span><span class="s8">only screen </span><span class="s2">and </span><span class="s3">(</span><span class="s4">min-width</span><span class="s5">: </span><span class="s7">35</span><span class="s8">em</span><span class="s3">) {</span>
+  <span class="s0">/* Style adjustments for viewports that meet the condition */</span>
+<span class="s3">}</span>
+
+<span class="s10">@media </span><span class="s2">print</span><span class="s3">,</span>
+  <span class="s3">(</span><span class="s4">-webkit-min-device-pixel-ratio</span><span class="s5">: </span><span class="s7">1.25</span><span class="s3">),</span>
+  <span class="s3">(</span><span class="s2">min-resolution</span><span class="s5">: </span><span class="s7">1.25</span><span class="s8">dppx</span><span class="s3">),</span>
+  <span class="s3">(</span><span class="s2">min-resolution</span><span class="s5">: </span><span class="s7">120</span><span class="s8">dpi</span><span class="s3">) {</span>
+  <span class="s0">/* Style adjustments for high resolution devices */</span>
+<span class="s3">}</span>
+
+<span class="s0">/* ========================================================================== 
+   Print styles. 
+   Inlined to avoid the additional HTTP request: 
+   https://www.phpied.com/delay-loading-your-print-css/ 
+   ========================================================================== */</span>
+
+<span class="s10">@media </span><span class="s2">print </span><span class="s3">{</span>
+  <span class="s2">*</span><span class="s3">,</span>
+  <span class="s2">*</span><span class="s5">::</span><span class="s2">before</span><span class="s3">,</span>
+  <span class="s2">*</span><span class="s5">::</span><span class="s2">after </span><span class="s3">{</span>
+    <span class="s4">background</span><span class="s5">: </span><span class="s6">#fff </span><span class="s9">!important</span><span class="s3">;</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s6">#000 </span><span class="s9">!important</span><span class="s3">;</span>
+    <span class="s0">/* Black prints faster */</span>
+    <span class="s4">box-shadow</span><span class="s5">: </span><span class="s8">none </span><span class="s9">!important</span><span class="s3">;</span>
+    <span class="s4">text-shadow</span><span class="s5">: </span><span class="s8">none </span><span class="s9">!important</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">a</span><span class="s3">,</span>
+  <span class="s2">a</span><span class="s5">:</span><span class="s2">visited </span><span class="s3">{</span>
+    <span class="s4">text-decoration</span><span class="s5">: </span><span class="s8">underline</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">a</span><span class="s3">[</span><span class="s2">href</span><span class="s3">]</span><span class="s5">::</span><span class="s2">after </span><span class="s3">{</span>
+    <span class="s4">content</span><span class="s5">: </span><span class="s8">&quot; (&quot; </span><span class="s2">attr</span><span class="s3">(</span><span class="s2">href</span><span class="s3">) </span><span class="s8">&quot;)&quot;</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">abbr</span><span class="s3">[</span><span class="s2">title</span><span class="s3">]</span><span class="s5">::</span><span class="s2">after </span><span class="s3">{</span>
+    <span class="s4">content</span><span class="s5">: </span><span class="s8">&quot; (&quot; </span><span class="s2">attr</span><span class="s3">(</span><span class="s2">title</span><span class="s3">) </span><span class="s8">&quot;)&quot;</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s0">/* 
+   * Don't show links that are fragment identifiers, 
+   * or use the `javascript:` pseudo protocol 
+   */</span>
+  <span class="s2">a</span><span class="s3">[</span><span class="s2">href</span><span class="s3">^=</span><span class="s8">&quot;#&quot;</span><span class="s3">]</span><span class="s5">::</span><span class="s2">after</span><span class="s3">,</span>
+  <span class="s2">a</span><span class="s3">[</span><span class="s2">href</span><span class="s3">^=</span><span class="s8">&quot;javascript:&quot;</span><span class="s3">]</span><span class="s5">::</span><span class="s2">after </span><span class="s3">{</span>
+    <span class="s4">content</span><span class="s5">: </span><span class="s8">&quot;&quot;</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">pre </span><span class="s3">{</span>
+    <span class="s4">white-space</span><span class="s5">: </span><span class="s8">pre-wrap </span><span class="s9">!important</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">pre</span><span class="s3">,</span>
+  <span class="s2">blockquote </span><span class="s3">{</span>
+    <span class="s4">border</span><span class="s5">: </span><span class="s7">1</span><span class="s8">px solid </span><span class="s6">#999</span><span class="s3">;</span>
+    <span class="s4">page-break-inside</span><span class="s5">: </span><span class="s8">avoid</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">tr</span><span class="s3">,</span>
+  <span class="s2">img </span><span class="s3">{</span>
+    <span class="s4">page-break-inside</span><span class="s5">: </span><span class="s8">avoid</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">p</span><span class="s3">,</span>
+  <span class="s2">h2</span><span class="s3">,</span>
+  <span class="s2">h3 </span><span class="s3">{</span>
+    <span class="s4">orphans</span><span class="s5">: </span><span class="s7">3</span><span class="s3">;</span>
+    <span class="s4">widows</span><span class="s5">: </span><span class="s7">3</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s2">h2</span><span class="s3">,</span>
+  <span class="s2">h3 </span><span class="s3">{</span>
+    <span class="s4">page-break-after</span><span class="s5">: </span><span class="s8">avoid</span><span class="s3">;</span>
+  <span class="s3">}</span>
+<span class="s3">}</span>
+
+</pre>
+</body>
+</html>

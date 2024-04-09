@@ -1,0 +1,94 @@
+@import "navigation.css";
+@import "hero.css";
+@import "timeline.css";
+@import "services.css";
+@import "startingpoint.css";
+@import "footer.css";
+@import "logos.css";
+
+
+:root {
+  --primary: #459F9D;
+  --primaryLight: #ffba43;
+  --secondary: #ffba43;
+  --secondaryLight: #ffba43;
+  --headerColor: #1E1F2F;
+  --bodyTextColor: #4e4b66;
+  --bodyTextColorWhite: #fafbfc;
+  --item-text-weight: normal;
+  --topperFontSize: clamp(0.65rem, 1.28vw, 0.8rem);
+  --footerFontSize: clamp(0.65rem, 1.92vw, 1.2rem);
+  --headerFontSize: clamp(3.15rem, 3.92vw, 3.25rem);
+  --h1-font-size: clamp(1.4rem, 3.2vw, 1.6rem);
+  --h2-font-size: clamp(1.8rem, 3.9vw, 2.35rem);
+  --bodyFontSize: 1rem;
+  --sectionPadding: clamp(3.0rem, 6.256vw, 5.0rem) 1rem;
+}
+
+
+body {
+  font-family: Krub, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 18px;
+  padding: 18px;
+}
+
+#header {
+  position: absolute; /* or 'absolute', depending on your layout */
+  top: 0;
+  width: 100%;
+  transition: top 0.4s; /* Smooth transition for the hide/show effect */
+}
+
+*, *:before, *:after {
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+}
+
+.cs-topper {
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: inherit;
+  letter-spacing: .1em;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.cs-footer{
+  font-size: var(--footerFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .15em;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.cs-title {
+  font-size: var(--headerFontSize);
+  font-weight: 700;
+  line-height: 1.2em;
+  text-align: inherit;
+  max-width: 43.75rem;
+  margin: 0 0 1rem 0;
+  color: var(--headerColor);
+  position: relative;
+}
+
+.cs-text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--bodyFontSize);
+  line-height: 1.5em;
+  text-align: inherit;
+  width: 100%;
+  max-width: 40.625rem;
+  margin: 0;
+  color: var(--bodyTextColor);
+}

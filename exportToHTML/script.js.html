@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>script.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #cf8e6d;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+script.js</font>
+</center></td></tr></table>
+<pre><span class="s0">document</span><span class="s1">.</span><span class="s0">addEventListener</span><span class="s1">(</span><span class="s2">'DOMContentLoaded'</span><span class="s1">, () =&gt; {</span>
+  <span class="s0">console</span><span class="s1">.</span><span class="s0">log</span><span class="s1">(</span><span class="s2">'Document loaded and ready.'</span><span class="s1">);</span>
+
+  <span class="s3">var </span><span class="s0">CSbody </span><span class="s1">= </span><span class="s0">document</span><span class="s1">.</span><span class="s0">querySelector</span><span class="s1">(</span><span class="s2">&quot;body&quot;</span><span class="s1">);</span>
+  <span class="s3">const </span><span class="s0">CSnavbarMenu </span><span class="s1">= </span><span class="s0">document</span><span class="s1">.</span><span class="s0">querySelector</span><span class="s1">(</span><span class="s2">&quot;#cs-navigation&quot;</span><span class="s1">);</span>
+  <span class="s3">const </span><span class="s0">CShamburgerMenu </span><span class="s1">= </span><span class="s0">document</span><span class="s1">.</span><span class="s0">querySelector</span><span class="s1">(</span><span class="s2">&quot;#cs-navigation .cs-toggle&quot;</span><span class="s1">);</span>
+
+  <span class="s0">fetch</span><span class="s1">(</span><span class="s2">'header.html'</span><span class="s1">)</span>
+    <span class="s1">.</span><span class="s0">then</span><span class="s1">(</span><span class="s0">response </span><span class="s1">=&gt; </span><span class="s0">response</span><span class="s1">.</span><span class="s0">text</span><span class="s1">())</span>
+    <span class="s1">.</span><span class="s0">then</span><span class="s1">(</span><span class="s0">data </span><span class="s1">=&gt; {</span>
+      <span class="s0">document</span><span class="s1">.</span><span class="s0">getElementById</span><span class="s1">(</span><span class="s2">'header'</span><span class="s1">).</span><span class="s0">innerHTML </span><span class="s1">= </span><span class="s0">data</span><span class="s1">;</span>
+      <span class="s0">setupScrollListener</span><span class="s1">();</span>
+    <span class="s1">})</span>
+    <span class="s1">.</span><span class="s0">catch</span><span class="s1">(</span><span class="s0">error </span><span class="s1">=&gt; </span><span class="s0">console</span><span class="s1">.</span><span class="s0">error</span><span class="s1">(</span><span class="s2">'Error loading the header:'</span><span class="s1">, </span><span class="s0">error</span><span class="s1">));</span>
+
+  <span class="s0">fetch</span><span class="s1">(</span><span class="s2">'footer.html'</span><span class="s1">)</span>
+    <span class="s1">.</span><span class="s0">then</span><span class="s1">(</span><span class="s0">response </span><span class="s1">=&gt; </span><span class="s0">response</span><span class="s1">.</span><span class="s0">text</span><span class="s1">())</span>
+    <span class="s1">.</span><span class="s0">then</span><span class="s1">(</span><span class="s0">data </span><span class="s1">=&gt; {</span>
+      <span class="s0">document</span><span class="s1">.</span><span class="s0">getElementById</span><span class="s1">(</span><span class="s2">'footer'</span><span class="s1">).</span><span class="s0">innerHTML </span><span class="s1">= </span><span class="s0">data</span><span class="s1">;</span>
+    <span class="s1">})</span>
+    <span class="s1">.</span><span class="s0">catch</span><span class="s1">(</span><span class="s0">error </span><span class="s1">=&gt; </span><span class="s0">console</span><span class="s1">.</span><span class="s0">error</span><span class="s1">(</span><span class="s2">'Error loading the footer:'</span><span class="s1">, </span><span class="s0">error</span><span class="s1">));</span>
+
+  <span class="s0">CShamburgerMenu</span><span class="s1">.</span><span class="s0">addEventListener</span><span class="s1">(</span><span class="s2">'click'</span><span class="s1">, </span><span class="s3">function</span><span class="s1">() {</span>
+    <span class="s0">CShamburgerMenu</span><span class="s1">.</span><span class="s0">classList</span><span class="s1">.</span><span class="s0">toggle</span><span class="s1">(</span><span class="s2">&quot;cs-active&quot;</span><span class="s1">);</span>
+    <span class="s0">CSnavbarMenu</span><span class="s1">.</span><span class="s0">classList</span><span class="s1">.</span><span class="s0">toggle</span><span class="s1">(</span><span class="s2">&quot;cs-active&quot;</span><span class="s1">);</span>
+    <span class="s0">CSbody</span><span class="s1">.</span><span class="s0">classList</span><span class="s1">.</span><span class="s0">toggle</span><span class="s1">(</span><span class="s2">&quot;cs-open&quot;</span><span class="s1">);</span>
+    <span class="s0">ariaExpanded</span><span class="s1">();</span>
+  <span class="s1">});</span>
+
+  <span class="s3">function </span><span class="s0">ariaExpanded</span><span class="s1">() {</span>
+    <span class="s3">const </span><span class="s0">csUL </span><span class="s1">= </span><span class="s0">document</span><span class="s1">.</span><span class="s0">querySelector</span><span class="s1">(</span><span class="s2">'#cs-expanded'</span><span class="s1">);</span>
+    <span class="s3">const </span><span class="s0">csExpanded </span><span class="s1">= </span><span class="s0">csUL</span><span class="s1">.</span><span class="s0">getAttribute</span><span class="s1">(</span><span class="s2">'aria-expanded'</span><span class="s1">);</span>
+    <span class="s0">csUL</span><span class="s1">.</span><span class="s0">setAttribute</span><span class="s1">(</span><span class="s2">'aria-expanded'</span><span class="s1">, </span><span class="s0">csExpanded </span><span class="s1">=== </span><span class="s2">'false' </span><span class="s1">? </span><span class="s2">'true' </span><span class="s1">: </span><span class="s2">'false'</span><span class="s1">);</span>
+  <span class="s1">}</span>
+<span class="s1">});</span>
+
+<span class="s3">function </span><span class="s0">setupScrollListener</span><span class="s1">() {</span>
+  <span class="s3">let </span><span class="s0">lastScrollTop </span><span class="s1">= </span><span class="s4">0</span><span class="s1">;</span>
+  <span class="s0">window</span><span class="s1">.</span><span class="s0">addEventListener</span><span class="s1">(</span><span class="s2">'scroll'</span><span class="s1">, </span><span class="s3">function</span><span class="s1">() {</span>
+    <span class="s3">let </span><span class="s0">currentScroll </span><span class="s1">= </span><span class="s0">window</span><span class="s1">.</span><span class="s0">pageYOffset </span><span class="s1">|| </span><span class="s0">document</span><span class="s1">.</span><span class="s0">documentElement</span><span class="s1">.</span><span class="s0">scrollTop</span><span class="s1">;</span>
+
+    <span class="s3">if </span><span class="s1">(</span><span class="s0">currentScroll </span><span class="s1">&gt; </span><span class="s0">lastScrollTop</span><span class="s1">){</span>
+      <span class="s5">// Scrolling down</span>
+      <span class="s0">document</span><span class="s1">.</span><span class="s0">getElementById</span><span class="s1">(</span><span class="s2">'header'</span><span class="s1">).</span><span class="s0">style</span><span class="s1">.</span><span class="s0">top </span><span class="s1">= </span><span class="s2">&quot;-70px&quot;</span><span class="s1">;</span>
+    <span class="s1">} </span><span class="s3">else </span><span class="s1">{</span>
+      <span class="s5">// Scrolling up</span>
+      <span class="s0">document</span><span class="s1">.</span><span class="s0">getElementById</span><span class="s1">(</span><span class="s2">'header'</span><span class="s1">).</span><span class="s0">style</span><span class="s1">.</span><span class="s0">top </span><span class="s1">= </span><span class="s2">&quot;0px&quot;</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s0">lastScrollTop </span><span class="s1">= </span><span class="s0">currentScroll </span><span class="s1">&lt;= </span><span class="s4">0 </span><span class="s1">? </span><span class="s4">0 </span><span class="s1">: </span><span class="s0">currentScroll</span><span class="s1">;</span>
+  <span class="s1">}, </span><span class="s3">false</span><span class="s1">);</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
