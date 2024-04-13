@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0em) {
   #banner-849 {
     /* 175px - 260px top */
-    padding: clamp(10.9375rem, 20vw, 16.25rem) 1rem clamp(6.25rem, 14vw, 12vw);
+    padding: clamp(10.9375rem, 16.25vw, 20rem) 1rem clamp(6.25rem, 12vw, 14vw);
     /* clips svg wave from causing overflow issues */
     overflow: hidden;
     position: relative;
@@ -14,7 +14,7 @@
   }
   #banner-849 .cs-container {
     text-align: center;
-    width: 100%;
+    width: 500%;
     max-width: 80rem;
     margin: auto;
     display: flex;
@@ -26,7 +26,7 @@
   #banner-849 .cs-int-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.2em;
     text-align: inherit;
     margin: 0;
@@ -78,6 +78,14 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
+  #banner-849 {
+    /* Adjusting top and bottom padding for tablet screens */
+    padding: clamp(10.9375rem, 15vw, 16.25rem) 0 clamp(6.25rem, 10.5vw, 12vw);
+    /* Existing styles to manage overflow and positioning */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
   #banner-849 .cs-background:before {
     opacity: 1;
     background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.9) 16.86%, rgba(0, 0, 0, 0) 100%);
@@ -156,8 +164,20 @@
   #content-page-849 .cs-color {
     color: var(--primary);
   }
+
+  #content-page-849 .cs-item-text {
+    margin: 0;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: var(--bodyTextColor);
+  }
+
+
   #content-page-849 p {
     font-size: var(--bodyFontSize);
+    font-weight: 600;
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;
@@ -243,9 +263,12 @@
   }
   #content-page-849 .cs-content {
     flex: none;
-    width: 60%;
+    width: 40%;
   }
   #content-page-849 .cs-image-group {
     display: flex;
   }
 }
+
+
+
