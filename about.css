@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0em) {
   #banner-849 {
     /* 175px - 260px top */
-    padding: clamp(10.9375rem, 16.25vw, 20rem) 1rem clamp(6.25rem, 12vw, 14vw);
+    padding: clamp(10.9375rem, 20vw, 16.25rem) 0rem clamp(6.25rem, 14vw, 12vw);
     /* clips svg wave from causing overflow issues */
     overflow: hidden;
     position: relative;
@@ -80,7 +80,7 @@
 @media only screen and (min-width: 48em) {
   #banner-849 {
     /* Adjusting top and bottom padding for tablet screens */
-    padding: clamp(10.9375rem, 15vw, 16.25rem) 0 clamp(6.25rem, 10.5vw, 12vw);
+    padding: clamp(10.9375rem, 10vw, 16.25rem) 1.5rem clamp(6.25rem, 7vw, 12vw);
     /* Existing styles to manage overflow and positioning */
     overflow: hidden;
     position: relative;
